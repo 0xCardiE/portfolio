@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marko Blazekovic — full stack developer</title>
+  <meta name="description" content="Portfolio of Marko Blazekovic. Wallets, web apps, and mobile. Ethereum Swarm, 1337, Saber, and Termal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Outfit:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23110f0c'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='16' fill='%23e39a52'%3EM%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top">Marko Blazekovic</a>
+      <nav class="nav" aria-label="Page">
+        <a href="#work">Work</a>
+        <a href="#earlier">Earlier</a>
+        <a href="mailto:marko@arabba.hr">Email</a>
+        <a href="https://github.com/0xCardiE">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Full stack developer · Rijeka</p>
+        <h1>Work so far.</h1>
+        <p class="lede">I work at Ethereum Swarm on the contracts and the products. Alongside that I build wallets and a mobile app. This page is the short version, with the screens.</p>
+        <div class="hero-links">
+          <a class="pill" href="https://github.com/0xCardiE">github.com/0xCardiE</a>
+          <a class="pill" href="mailto:marko@arabba.hr">marko@arabba.hr</a>
+        </div>
+        <nav class="jump" aria-label="Projects">
+          <a href="#swarm"><img src="assets/bee-home.jpg" alt="" /><span>Swarm</span></a>
+          <a href="#wallet1337"><img src="assets/1337-assets.png" alt="" /><span>1337</span></a>
+          <a href="#saber"><img src="assets/saber-portfolio.jpg" alt="" /><span>Saber</span></a>
+          <a href="#termal"><img src="assets/termal-sessions.jpg" alt="" /><span>Termal</span></a>
+        </nav>
+      </div>
+    </section>
+
+    <div id="work">
+      <article class="project" id="swarm">
+        <div class="wrap project-grid">
+          <div class="gallery" data-switcher>
+            <figure class="stage">
+              <button type="button" data-lightbox aria-label="Enlarge BeeWallet home">
+                <img src="assets/bee-home.jpg" alt="BeeWallet home: balance, batches, storage, and chain balances" />
+              </button>
+            </figure>
+            <div class="thumbs">
+              <button class="thumb" type="button" aria-pressed="true" aria-label="Show BeeWallet home">
+                <img src="assets/bee-home.jpg" alt="BeeWallet home: balance, batches, storage, and chain balances" />
+              </button>
+              <button class="thumb" type="button" aria-pressed="false" aria-label="Show BeeWallet upload">
+                <img src="assets/bee-upload.jpg" alt="BeeWallet upload screen for sending a file to Swarm" />
+              </button>
+              <button class="thumb" type="button" aria-pressed="false" aria-label="Show Beeport">
+                <img src="assets/beeport.jpg" alt="Beeport buy screen: chain, token, and storage size" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <p class="kicker">February 2023 – present · Full stack developer</p>
+            <h2>Ethereum Swarm</h2>
+            <p class="summary">Current role. Smart contracts and the products people use. BeeWallet is the Chrome extension for buying postage and uploading to a Bee node. Beeport is the website for buying storage and uploading without running a node.</p>
+            <ul class="facts">
+              <li>Solidity</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Vite</li>
+              <li>viem</li>
+              <li>Playwright</li>
+            </ul>
+            <div class="links">
+              <a href="https://beeport.ethswarm.org/">Beeport</a>
+              <a href="https://chromewebstore.google.com/detail/beewallet/ijiliibiampbpaabdcdncfjpenepbiam">BeeWallet on Chrome</a>
+              <a href="https://www.ethswarm.org/">ethswarm.org</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project flip" id="wallet1337">
+        <div class="wrap project-grid">
+          <div class="ui-grid">
+            <button class="shot" type="button" data-lightbox aria-label="Enlarge 1337 assets">
+              <img src="assets/1337-assets.png" alt="1337 Wallet assets screen with chain, RPC, and token balances" />
+            </button>
+            <button class="shot" type="button" data-lightbox aria-label="Enlarge 1337 confirm">
+              <img src="assets/1337-confirm.png" alt="1337 confirm screen showing a simulated token transfer" />
+            </button>
+            <button class="shot" type="button" data-lightbox aria-label="Enlarge 1337 swap">
+              <img src="assets/1337-swap.png" alt="1337 swap screen" />
+            </button>
+          </div>
+          <div>
+            <p class="kicker">April 2026 – present · Creator and engineer</p>
+            <h2>1337 Wallet</h2>
+            <p class="summary">Open-source EVM wallet as a Chrome extension, built while at Swarm. The confirm screen shows the decoded call and a local simulation before you sign. Keys stay on the machine. There is no 1337 server.</p>
+            <ul class="facts">
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>viem</li>
+              <li>Webpack</li>
+              <li>LavaMoat</li>
+              <li>Next.js</li>
+              <li>Tailwind</li>
+              <li>Vitest</li>
+              <li>Playwright</li>
+            </ul>
+            <div class="links">
+              <a href="https://1337wallet.io/">1337wallet.io</a>
+              <a href="https://github.com/0xCardiE/1337-wallet">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" id="saber">
+        <div class="wrap project-grid">
+          <div class="gallery" data-switcher>
+            <figure class="stage">
+              <button type="button" data-lightbox aria-label="Enlarge Saber portfolio">
+                <img src="assets/saber-portfolio.jpg" alt="Saber portfolio: tokens, prices, and the side-panel wallet" />
+              </button>
+            </figure>
+            <div class="thumbs">
+              <button class="thumb" type="button" aria-pressed="true" aria-label="Show Saber portfolio">
+                <img src="assets/saber-portfolio.jpg" alt="Saber portfolio: tokens, prices, and the side-panel wallet" />
+              </button>
+              <button class="thumb" type="button" aria-pressed="false" aria-label="Show Saber swap">
+                <img src="assets/saber-swap.jpg" alt="Saber swap from SOL to USDC through Jupiter" />
+              </button>
+              <button class="thumb" type="button" aria-pressed="false" aria-label="Show Saber perps">
+                <img src="assets/saber-perps.jpg" alt="Saber perps screen on Phoenix" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <p class="kicker">November 2026 – present · Creator and engineer</p>
+            <h2>Saber</h2>
+            <p class="summary">Solana wallet in the Chrome side panel, built while at Swarm. Portfolio, Jupiter swaps, staking, NFTs, and Phoenix perps. Keys stay on the machine. Saber has no server.</p>
+            <ul class="facts">
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Vite</li>
+              <li>Solana Kit</li>
+              <li>Jupiter</li>
+              <li>Phoenix</li>
+            </ul>
+            <div class="links">
+              <a href="https://0xcardie.github.io/saberwallet/">Website</a>
+              <a href="https://chromewebstore.google.com/detail/saber-wallet/phkifihgcjljipgfkjnjhlndjgdkkpgc">Chrome Web Store</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project flip" id="termal">
+        <div class="wrap project-grid">
+          <div class="phones">
+            <figure class="phone">
+              <button class="shot" type="button" data-lightbox aria-label="Enlarge Termal sessions">
+                <img src="assets/termal-sessions.jpg" alt="Termal on iPhone: SSH connection and live tmux sessions" />
+              </button>
+            </figure>
+            <figure class="phone">
+              <button class="shot" type="button" data-lightbox aria-label="Enlarge Termal pairing">
+                <img src="assets/termal-pair.jpg" alt="Termal pairing screen for connecting a phone to a computer" />
+              </button>
+            </figure>
+          </div>
+          <div>
+            <p class="kicker">August 2026 – November 2026 · Creator and engineer</p>
+            <h2>Termal</h2>
+            <p class="summary">iOS and Android app, built while at Swarm. You give a coding agent a command, leave, and come back to the tmux session on your own machine. No Termal cloud.</p>
+            <ul class="facts">
+              <li>Flutter</li>
+              <li>Dart</li>
+              <li>Riverpod</li>
+              <li>go_router</li>
+              <li>dartssh2</li>
+              <li>xterm</li>
+              <li>React</li>
+              <li>Vite</li>
+            </ul>
+            <div class="links">
+              <a href="https://termal.dev/">termal.dev</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <section class="earlier" id="earlier">
+      <div class="wrap">
+        <h2>Earlier</h2>
+        <div class="jobs">
+          <article class="job">
+            <p class="when">January 2019 – March 2021 · Full stack</p>
+            <h3>Lelo</h3>
+            <p>Commerce site, about $60M a year online. Decoupled React storefront on JSON:API and GraphQL. Drupal 7 to 8/9 theme in Twig and SCSS. PHP, Drupal, Symfony, JavaScript.</p>
+          </article>
+          <article class="job">
+            <p class="when">October 2014 – August 2017 · Full stack</p>
+            <h3>Foreo</h3>
+            <p>Multi-language, multi-currency store, about $100M a year online. Custom Drupal theme in HTML, CSS, SCSS, and JavaScript. Payments included PayPal, Stripe, Alipay, iDEAL, Sofort, and Sezzle.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Marko Blazekovic · Rijeka</span>
+      <span><a href="mailto:marko@arabba.hr">marko@arabba.hr</a> · <a href="https://github.com/0xCardiE">GitHub</a></span>
+    </div>
+  </footer>
+
+  <dialog id="lightbox">
+    <img alt="" />
+    <figcaption></figcaption>
+    <form method="dialog">
+      <button type="submit">Close</button>
+    </form>
+  </dialog>
+  <script src="main.js"></script>
+</body>
+</html>
