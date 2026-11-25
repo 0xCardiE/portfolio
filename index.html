@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Marko Blazekovic — full stack developer</title>
-  <meta name="description" content="Marko Blazekovic, full stack developer. Ethereum Swarm, 1337, Saber, Termal, Lelo, and Foreo." />
+  <title>Marko Blazekovic — products</title>
+  <meta name="description" content="Products by Marko Blazekovic: Beeport, BeeWallet, 1337, Saber, Termal, Lelo, Foreo, and King Trivia." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -15,16 +15,16 @@
   <div class="app">
     <aside>
       <p class="name">Marko Blazekovic</p>
-      <p class="role">Full stack developer<br />Rijeka, Croatia</p>
-      <nav class="index" aria-label="Projects">
-        <p class="group">2023 – now</p>
-        <a href="#swarm">Swarm <span>present</span></a>
-        <a href="#wallet1337">1337 <span>2026</span></a>
-        <a href="#saber">Saber <span>2026</span></a>
-        <a href="#termal">Termal <span>2026</span></a>
-        <p class="group">2014 – 2021</p>
-        <a href="#lelo">Lelo <span>2019–21</span></a>
-        <a href="#foreo">Foreo <span>2014–17</span></a>
+      <p class="role">Products</p>
+      <nav class="index" aria-label="Products">
+        <a href="#beeport">Beeport</a>
+        <a href="#beewallet">BeeWallet</a>
+        <a href="#wallet1337">1337</a>
+        <a href="#saber">Saber</a>
+        <a href="#termal">Termal</a>
+        <a href="#lelo">Lelo</a>
+        <a href="#foreo">Foreo</a>
+        <a href="#king">King Trivia</a>
       </nav>
       <p class="contact">
         <a href="mailto:marko@arabba.hr">marko@arabba.hr</a><br />
@@ -33,31 +33,58 @@
     </aside>
 
     <main>
-      <article class="panel" id="swarm">
+      <article class="panel" id="beeport">
         <div class="gallery" data-switcher>
           <figure class="stage">
             <button type="button" data-lightbox aria-label="Enlarge screenshot">
-              <img class="cover" src="assets/bee-home.jpg" alt="BeeWallet home: balance, storage, and chain balances" />
+              <img src="assets/beeport-buy.jpg" alt="Beeport buy form with chain, token, storage size, and duration" />
             </button>
-            <figcaption>BeeWallet home</figcaption>
+            <figcaption>Buy</figcaption>
           </figure>
           <div class="thumbs">
-            <button class="thumb" type="button" aria-pressed="true">BeeWallet</button>
-            <button class="thumb" type="button" aria-pressed="false" data-src="assets/bee-upload.jpg" data-alt="BeeWallet upload screen" data-cap="BeeWallet upload">Upload</button>
-            <button class="thumb" type="button" aria-pressed="false" data-src="assets/beeport.jpg" data-alt="Beeport buy screen" data-cap="Beeport">Beeport</button>
+            <button class="thumb" type="button" aria-pressed="true" aria-label="Buy" data-src="assets/beeport-buy.jpg" data-alt="Beeport buy form with chain, token, storage size, and duration" data-cap="Buy"><img src="assets/beeport-buy.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Duration" data-src="assets/beeport-duration.jpg" data-alt="Beeport storage duration options" data-cap="Duration"><img src="assets/beeport-duration.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Upload" data-src="assets/beeport-upload.jpg" data-alt="Beeport upload tab, your storage" data-cap="Upload"><img src="assets/beeport-upload.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Settings" data-src="assets/beeport-settings.jpg" data-alt="Beeport settings and how to use the app" data-cap="Settings"><img src="assets/beeport-settings.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Node" data-src="assets/beeport-node.jpg" data-alt="Beeport custom Bee node URL" data-cap="Node"><img src="assets/beeport-node.jpg" alt="" /></button>
           </div>
         </div>
         <div class="copy">
-          <p class="kicker">February 2023 – present · Full stack developer</p>
-          <h1>Ethereum Swarm</h1>
-          <p>Full stack on the contracts and the products. BeeWallet is the Chrome extension for buying postage and uploading to a Bee node. Beeport is the website for buying storage and uploading without running a node.</p>
+          <h1>Beeport</h1>
+          <p>A site for buying Swarm storage and uploading files or a website, without running a node. It has a buy form with chain, size, and duration, an upload list, upload history, and a setting for your own Bee node.</p>
           <ul class="facts">
-            <li>Solidity</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>Vite</li><li>viem</li><li>Playwright</li>
+            <li>Next.js</li><li>React</li><li>TypeScript</li><li>RainbowKit</li><li>viem</li>
           </ul>
           <p class="links">
             <a href="https://beeport.ethswarm.org/">beeport.ethswarm.org</a>
-            <a href="https://chromewebstore.google.com/detail/beewallet/ijiliibiampbpaabdcdncfjpenepbiam">BeeWallet on Chrome</a>
-            <a href="https://www.ethswarm.org/">ethswarm.org</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="panel" id="beewallet">
+        <div class="gallery" data-switcher>
+          <figure class="stage">
+            <button type="button" data-lightbox aria-label="Enlarge screenshot">
+              <img src="assets/beewallet-home.jpg" alt="BeeWallet home with balance, batches, and chain balances" />
+            </button>
+            <figcaption>Home</figcaption>
+          </figure>
+          <div class="thumbs">
+            <button class="thumb" type="button" aria-pressed="true" aria-label="Home" data-src="assets/beewallet-home.jpg" data-alt="BeeWallet home with balance, batches, and chain balances" data-cap="Home"><img src="assets/beewallet-home.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Storage" data-src="assets/beewallet-storage.jpg" data-alt="BeeWallet storage and postage" data-cap="Storage"><img src="assets/beewallet-storage.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Upload" data-src="assets/beewallet-upload.jpg" data-alt="BeeWallet upload screen" data-cap="Upload"><img src="assets/beewallet-upload.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Files" data-src="assets/beewallet-files.jpg" data-alt="BeeWallet file list" data-cap="Files"><img src="assets/beewallet-files.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Activity" data-src="assets/beewallet-activity.jpg" data-alt="BeeWallet activity" data-cap="Activity"><img src="assets/beewallet-activity.jpg" alt="" /></button>
+          </div>
+        </div>
+        <div class="copy">
+          <h1>BeeWallet</h1>
+          <p>A Chrome extension for Swarm. It has a balance, postage stamps, file upload, a file list, and activity. It talks to a Bee node.</p>
+          <ul class="facts">
+            <li>TypeScript</li><li>React</li><li>Vite</li><li>viem</li><li>Playwright</li>
+          </ul>
+          <p class="links">
+            <a href="https://chromewebstore.google.com/detail/beewallet/ijiliibiampbpaabdcdncfjpenepbiam">Chrome Web Store</a>
           </p>
         </div>
       </article>
@@ -66,22 +93,23 @@
         <div class="gallery" data-switcher>
           <figure class="stage">
             <button type="button" data-lightbox aria-label="Enlarge screenshot">
-              <img class="contain" src="assets/1337-assets.png" alt="1337 Wallet assets, chain, and RPC" />
+              <img src="assets/1337-assets.jpg" alt="1337 Wallet assets, chain, and RPC" />
             </button>
             <figcaption>Assets</figcaption>
           </figure>
           <div class="thumbs">
-            <button class="thumb" type="button" aria-pressed="true">Assets</button>
-            <button class="thumb" type="button" aria-pressed="false" data-src="assets/1337-confirm.png" data-alt="1337 confirm screen with a simulated transfer" data-cap="Confirm">Confirm</button>
-            <button class="thumb" type="button" aria-pressed="false" data-src="assets/1337-swap.png" data-alt="1337 swap screen" data-cap="Swap">Swap</button>
+            <button class="thumb" type="button" aria-pressed="true" aria-label="Assets" data-src="assets/1337-assets.jpg" data-alt="1337 Wallet assets, chain, and RPC" data-cap="Assets"><img src="assets/1337-assets.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Confirm" data-src="assets/1337-confirm.jpg" data-alt="1337 confirm screen with a decoded call and a local simulation" data-cap="Confirm"><img src="assets/1337-confirm.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Swap" data-src="assets/1337-swap.jpg" data-alt="1337 swap screen" data-cap="Swap"><img src="assets/1337-swap.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="History" data-src="assets/1337-history.jpg" data-alt="1337 transaction history" data-cap="History"><img src="assets/1337-history.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="ENS" data-src="assets/1337-ens.jpg" data-alt="1337 ENS screen" data-cap="ENS"><img src="assets/1337-ens.jpg" alt="" /></button>
           </div>
         </div>
         <div class="copy">
-          <p class="kicker">April 2026 – present · Creator and engineer</p>
           <h1>1337 Wallet</h1>
-          <p>Open-source EVM wallet, Chrome extension, built while at Swarm. The confirm screen shows the decoded call and a local simulation before you sign. Keys stay on the machine. There is no 1337 server.</p>
+          <p>An open-source EVM wallet for Chrome. It has assets, a confirm screen with the decoded call and a local simulation, swaps, history, and ENS. Keys stay on the machine. There is no server.</p>
           <ul class="facts">
-            <li>TypeScript</li><li>React</li><li>viem</li><li>Webpack</li><li>LavaMoat</li><li>Next.js</li><li>Tailwind</li><li>Vitest</li><li>Playwright</li>
+            <li>TypeScript</li><li>React</li><li>viem</li><li>Webpack</li><li>LavaMoat</li><li>Next.js</li><li>Tailwind</li>
           </ul>
           <p class="links">
             <a href="https://1337wallet.io/">1337wallet.io</a>
@@ -94,20 +122,21 @@
         <div class="gallery" data-switcher>
           <figure class="stage">
             <button type="button" data-lightbox aria-label="Enlarge screenshot">
-              <img class="cover" src="assets/saber-portfolio.jpg" alt="Saber portfolio in the Chrome side panel" />
+              <img src="assets/saber-portfolio.jpg" alt="Saber portfolio in the Chrome side panel" />
             </button>
             <figcaption>Portfolio</figcaption>
           </figure>
           <div class="thumbs">
-            <button class="thumb" type="button" aria-pressed="true">Portfolio</button>
-            <button class="thumb" type="button" aria-pressed="false" data-src="assets/saber-swap.jpg" data-alt="Saber swap from SOL to USDC" data-cap="Swap">Swap</button>
-            <button class="thumb" type="button" aria-pressed="false" data-src="assets/saber-perps.jpg" data-alt="Saber perps on Phoenix" data-cap="Perps">Perps</button>
+            <button class="thumb" type="button" aria-pressed="true" aria-label="Portfolio" data-src="assets/saber-portfolio.jpg" data-alt="Saber portfolio in the Chrome side panel" data-cap="Portfolio"><img src="assets/saber-portfolio.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Swap" data-src="assets/saber-swap.jpg" data-alt="Saber swap" data-cap="Swap"><img src="assets/saber-swap.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Stocks" data-src="assets/saber-stocks.jpg" data-alt="Saber xStocks with live prices" data-cap="Stocks"><img src="assets/saber-stocks.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Perps" data-src="assets/saber-perps.jpg" data-alt="Saber perps on Phoenix" data-cap="Perps"><img src="assets/saber-perps.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Stake" data-src="assets/saber-stake.jpg" data-alt="Saber stake screen with validators" data-cap="Stake"><img src="assets/saber-stake.jpg" alt="" /></button>
           </div>
         </div>
         <div class="copy">
-          <p class="kicker">November 2026 – present · Creator and engineer</p>
           <h1>Saber</h1>
-          <p>Solana wallet in the Chrome side panel, built while at Swarm. Portfolio, Jupiter swaps, staking, NFTs, and Phoenix perps. Keys stay on the machine. Saber has no server.</p>
+          <p>A Solana wallet in the Chrome side panel. It has a portfolio, Jupiter swaps, xStocks, Phoenix perps, and staking. Keys stay on the machine. There is no server.</p>
           <ul class="facts">
             <li>TypeScript</li><li>React</li><li>Vite</li><li>Solana Kit</li><li>Jupiter</li><li>Phoenix</li>
           </ul>
@@ -122,24 +151,28 @@
         <div class="gallery" data-switcher>
           <figure class="stage">
             <button type="button" data-lightbox aria-label="Enlarge screenshot">
-              <img class="contain" src="assets/termal-sessions.jpg" alt="Termal on iPhone, SSH connection and tmux sessions" />
+              <img src="assets/termal-sessions.jpg" alt="Termal on iPhone, SSH connection and tmux sessions" />
             </button>
             <figcaption>Sessions</figcaption>
           </figure>
           <div class="thumbs">
-            <button class="thumb" type="button" aria-pressed="true">Sessions</button>
-            <button class="thumb" type="button" aria-pressed="false" data-src="assets/termal-pair.jpg" data-alt="Termal pairing a phone to a computer" data-cap="Pair">Pair</button>
+            <button class="thumb" type="button" aria-pressed="true" aria-label="Sessions" data-src="assets/termal-sessions.jpg" data-alt="Termal on iPhone, SSH connection and tmux sessions" data-cap="Sessions"><img src="assets/termal-sessions.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Command" data-src="assets/termal-command.jpg" data-alt="Termal command screen in a tmux session" data-cap="Command"><img src="assets/termal-command.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Pair" data-src="assets/termal-pair.jpg" data-alt="Termal pairing a phone to a computer" data-cap="Pair"><img src="assets/termal-pair.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Site" data-src="assets/termal-site.jpg" data-alt="termal.dev with a new tmux session" data-cap="Site"><img src="assets/termal-site.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Pricing" data-src="assets/termal-pricing.jpg" data-alt="Termal pricing, free and a one-time Pro unlock" data-cap="Pricing"><img src="assets/termal-pricing.jpg" alt="" /></button>
           </div>
         </div>
         <div class="copy">
-          <p class="kicker">August 2026 – November 2026 · Creator and engineer</p>
           <h1>Termal</h1>
-          <p>iOS and Android app, built while at Swarm. You give a coding agent a command and come back to the tmux session on your own machine. No Termal cloud.</p>
+          <p>An iPhone and Android app for a coding agent that stays on your computer, in tmux. It has sessions, a command screen, pairing, and a one-time Pro unlock. There is no Termal cloud.</p>
           <ul class="facts">
             <li>Flutter</li><li>Dart</li><li>Riverpod</li><li>go_router</li><li>dartssh2</li><li>xterm</li><li>React</li><li>Vite</li>
           </ul>
           <p class="links">
             <a href="https://termal.dev/">termal.dev</a>
+            <a href="https://termal.dev/pair">Pair</a>
+            <a href="https://termal.dev/pricing">Pricing</a>
           </p>
         </div>
       </article>
@@ -148,25 +181,28 @@
         <div class="gallery" data-switcher>
           <figure class="stage">
             <button type="button" data-lightbox aria-label="Enlarge screenshot">
-              <img class="cover" src="assets/lelo-home.jpg" alt="Lelo homepage" />
+              <img src="assets/lelo-home.jpg" alt="Lelo homepage" />
             </button>
-            <figcaption>lelo.com</figcaption>
+            <figcaption>Home</figcaption>
           </figure>
           <div class="thumbs">
-            <button class="thumb" type="button" aria-pressed="true">Home</button>
-            <button class="thumb" type="button" aria-pressed="false" data-src="assets/lelo-catalog.jpg" data-alt="Lelo bestsellers catalog" data-cap="Bestsellers">Bestsellers</button>
+            <button class="thumb" type="button" aria-pressed="true" aria-label="Home" data-src="assets/lelo-home.jpg" data-alt="Lelo homepage" data-cap="Home"><img src="assets/lelo-home.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Catalog" data-src="assets/lelo-catalog.jpg" data-alt="Lelo bestsellers with filters and a product grid" data-cap="Catalog"><img src="assets/lelo-catalog.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Couples" data-src="assets/lelo-couples.jpg" data-alt="Lelo couples category with subcategories" data-cap="Couples"><img src="assets/lelo-couples.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Product" data-src="assets/lelo-product.jpg" data-alt="Lelo product page with price and add to cart" data-cap="Product"><img src="assets/lelo-product.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Cart" data-src="assets/lelo-cart.jpg" data-alt="Lelo cart after adding a product" data-cap="Cart"><img src="assets/lelo-cart.jpg" alt="" /></button>
           </div>
         </div>
         <div class="copy">
-          <p class="kicker">January 2019 – March 2021 · Full stack developer</p>
           <h1>Lelo</h1>
-          <p>Full stack on the commerce site, about $60M a year online. Decoupled React storefront on JSON:API and GraphQL. Drupal 7 to 8/9 theme in Twig and SCSS. PHP, Drupal, Symfony, JavaScript.</p>
+          <p>An online store. It has a catalog with filters, category pages, a product page, and a cart. The storefront is React on JSON:API and GraphQL, with a Drupal theme in Twig and SCSS.</p>
           <ul class="facts">
             <li>PHP</li><li>Drupal</li><li>Symfony</li><li>React</li><li>Twig</li><li>SCSS</li><li>JSON:API</li><li>GraphQL</li>
           </ul>
           <p class="links">
             <a href="https://www.lelo.com/">lelo.com</a>
             <a href="https://www.lelo.com/bestsellers">Bestsellers</a>
+            <a href="https://www.lelo.com/sex-toys-for-couples">Couples</a>
           </p>
         </div>
       </article>
@@ -175,25 +211,58 @@
         <div class="gallery" data-switcher>
           <figure class="stage">
             <button type="button" data-lightbox aria-label="Enlarge screenshot">
-              <img class="cover" src="assets/foreo-home.jpg" alt="Foreo homepage" />
+              <img src="assets/foreo-home.jpg" alt="Foreo homepage" />
             </button>
-            <figcaption>foreo.com</figcaption>
+            <figcaption>Home</figcaption>
           </figure>
           <div class="thumbs">
-            <button class="thumb" type="button" aria-pressed="true">Home</button>
-            <button class="thumb" type="button" aria-pressed="false" data-src="assets/foreo-catalog.jpg" data-alt="Foreo bestsellers page" data-cap="Bestsellers">Bestsellers</button>
+            <button class="thumb" type="button" aria-pressed="true" aria-label="Home" data-src="assets/foreo-home.jpg" data-alt="Foreo homepage" data-cap="Home"><img src="assets/foreo-home.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Catalog" data-src="assets/foreo-grid.jpg" data-alt="Foreo catalog with filters, prices, and add buttons" data-cap="Catalog"><img src="assets/foreo-grid.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Product" data-src="assets/foreo-buy.jpg" data-alt="Foreo product page with options, price, and shipping country" data-cap="Product"><img src="assets/foreo-buy.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Oral care" data-src="assets/foreo-oral.jpg" data-alt="Foreo oral care category" data-cap="Oral care"><img src="assets/foreo-oral.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Device" data-src="assets/foreo-hero.jpg" data-alt="Foreo FAQ 202 device page" data-cap="Device"><img src="assets/foreo-hero.jpg" alt="" /></button>
           </div>
         </div>
         <div class="copy">
-          <p class="kicker">October 2014 – August 2017 · Full stack developer</p>
           <h1>Foreo</h1>
-          <p>Full stack on a multi-language, multi-currency store, about $100M a year online. Drupal theme in HTML, CSS, SCSS, and JavaScript. Payments included PayPal, Stripe, Alipay, iDEAL, Sofort, and Sezzle.</p>
+          <p>An online store for devices and skincare, in more than one language and currency. It has a catalog, product options, oral care, and checkout. Payments include PayPal, Stripe, Alipay, iDEAL, Sofort, and Sezzle.</p>
           <ul class="facts">
             <li>PHP</li><li>Drupal</li><li>Symfony</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SCSS</li>
           </ul>
           <p class="links">
             <a href="https://www.foreo.com/">foreo.com</a>
             <a href="https://www.foreo.com/bestsellers">Bestsellers</a>
+            <a href="https://www.foreo.com/shop/oral-care">Oral care</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="panel" id="king">
+        <div class="gallery" data-switcher>
+          <figure class="stage">
+            <button type="button" data-lightbox aria-label="Enlarge screenshot">
+              <img src="assets/king-home.jpg" alt="King Trivia homepage with pub quiz, Survey Slam, and music bingo" />
+            </button>
+            <figcaption>Home</figcaption>
+          </figure>
+          <div class="thumbs">
+            <button class="thumb" type="button" aria-pressed="true" aria-label="Home" data-src="assets/king-home.jpg" data-alt="King Trivia homepage with pub quiz, Survey Slam, and music bingo" data-cap="Home"><img src="assets/king-home.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Games" data-src="assets/king-games.jpg" data-alt="King Trivia game formats" data-cap="Games"><img src="assets/king-games.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Play" data-src="assets/king-play.jpg" data-alt="King Trivia player app, join a game with a code" data-cap="Play"><img src="assets/king-play.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Venues" data-src="assets/king-sales.jpg" data-alt="King Trivia page for bars and restaurants" data-cap="Venues"><img src="assets/king-sales.jpg" alt="" /></button>
+            <button class="thumb" type="button" aria-pressed="false" aria-label="Quizmaster" data-src="assets/king-quizmaster.jpg" data-alt="King Trivia quizmaster page" data-cap="Quizmaster"><img src="assets/king-quizmaster.jpg" alt="" /></button>
+          </div>
+        </div>
+        <div class="copy">
+          <h1>King Trivia</h1>
+          <p>A live trivia product. It has pub quiz, Survey Slam, and music bingo, a player app you join with a code, and pages for venues and quizmasters. Drupal, with a theme in SCSS and HTML, and payments.</p>
+          <ul class="facts">
+            <li>Drupal</li><li>PHP</li><li>SCSS</li><li>HTML</li><li>MySQL</li>
+          </ul>
+          <p class="links">
+            <a href="https://kingtrivia.com/">kingtrivia.com</a>
+            <a href="https://kingtrivia.com/our-games/">Games</a>
+            <a href="https://play.kingtrivia.com/">Play</a>
           </p>
         </div>
       </article>

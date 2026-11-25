@@ -33,7 +33,7 @@ document.querySelectorAll("[data-switcher]").forEach((switcher) => {
 const links = [...document.querySelectorAll(".index a")];
 
 function markCurrent() {
-  const id = (location.hash || "#swarm").slice(1);
+  const id = (location.hash || "#beeport").slice(1);
   links.forEach((link) => {
     if (link.getAttribute("href") === "#" + id) link.setAttribute("aria-current", "page");
     else link.removeAttribute("aria-current");
