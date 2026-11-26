@@ -46,11 +46,16 @@ aside {
 }
 
 .name {
+  display: block;
   margin: 0;
+  color: var(--text);
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: -0.03em;
+  text-decoration: none;
 }
+
+.name:hover { color: var(--accent); }
 
 .role {
   margin: 8px 0 0;
