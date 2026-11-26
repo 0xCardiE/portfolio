@@ -51,7 +51,8 @@
         </div>
         <div class="copy">
           <h1>Beeport</h1>
-          <p>A site for buying Swarm storage and uploading files. It has a buy form with chain, size, and duration, postage stamps you upload against, a file list, and settings for the Bee gateway, a custom node, and RPC.</p>
+          <p>Swarm storage, bought and used from the browser. Connect a wallet, pick the chain, the stamp size, and how long it should last, then upload files or a site against that stamp. Each stamp shows what was paid and how full it is, and it can be topped up. Files are grouped by type, including websites, and a file can be linked to an ENS name.</p>
+          <p>The browser hashes each chunk, stamps it, and posts it to a Bee node. There is no application server. Settings cover the public gateway, a node on your own machine, or one you host, plus a custom RPC.</p>
           <ul class="facts">
             <li>Next.js</li><li>React</li><li>TypeScript</li><li>RainbowKit</li><li>viem</li>
           </ul>
@@ -79,7 +80,7 @@
         </div>
         <div class="copy">
           <h1>BeeWallet</h1>
-          <p>A Chrome extension for Swarm. It has a balance, postage stamps, file upload, a file list, and activity. It talks to a Bee node.</p>
+          <p>A Chrome extension for Swarm storage. It keeps the balance and postage stamps beside the browser, uploads files to a Bee node, and lists those files with the activity that followed. TypeScript and React, built with Vite and viem, with the flows covered by Playwright.</p>
           <ul class="facts">
             <li>TypeScript</li><li>React</li><li>Vite</li><li>viem</li><li>Playwright</li>
           </ul>
@@ -107,7 +108,8 @@
         </div>
         <div class="copy">
           <h1>1337 Wallet</h1>
-          <p>An open-source EVM wallet for Chrome. It has assets, a confirm screen with the decoded call and a local simulation, a custom RPC, token approvals, and swaps. Keys stay on the machine. There is no server.</p>
+          <p>An open-source EVM wallet for Chrome and the other Chromium browsers. Before a transaction is signed, the confirm screen decodes the call, shows the contract source, and runs a local simulation, including proxy contracts and gas. Ledger and Trezor confirm on the device.</p>
+          <p>Each chain has its own RPC list, and the wallet fails over when an endpoint is down. Swaps go through LI.FI. There is ENS, a multisend, history, and a screen for revoking token, NFT, and Permit2 approvals. Keys stay on the machine. There is no 1337 server and no analytics. The extension is TypeScript, React, and viem, with LavaMoat on the build. The site is Next.js and Tailwind.</p>
           <ul class="facts">
             <li>TypeScript</li><li>React</li><li>viem</li><li>Webpack</li><li>LavaMoat</li><li>Next.js</li><li>Tailwind</li>
           </ul>
@@ -137,7 +139,7 @@
         </div>
         <div class="copy">
           <h1>Saber</h1>
-          <p>A Solana wallet in the Chrome side panel. It has a portfolio, Jupiter swaps, xStocks, Phoenix perps, and staking. Keys stay on the machine. There is no server.</p>
+          <p>A Solana wallet that lives in the Chrome side panel. From there you can see the portfolio, swap through Jupiter, follow tokenized stocks, trade perps on Phoenix, stake, and look at NFTs. Keys stay on the machine, and there is no Saber server. TypeScript, React, Vite, and Solana Kit.</p>
           <ul class="facts">
             <li>TypeScript</li><li>React</li><li>Vite</li><li>Solana Kit</li><li>Jupiter</li><li>Phoenix</li>
           </ul>
@@ -166,7 +168,8 @@
         </div>
         <div class="copy">
           <h1>Termal</h1>
-          <p>An iPhone and Android app for a coding agent that stays on your computer, in tmux. It has sessions, a command screen, pairing, and a one-time Pro unlock. There is no Termal cloud.</p>
+          <p>An iPhone and Android app for a coding agent that is already running on your computer. Pair the phone, send a command, and come back to the same tmux session later. The session stays on that machine, and so do the screenshots. There is no Termal account and no cloud in between. It works with Cursor, Codex, Claude Code, or any other agent that runs in tmux.</p>
+          <p>The app is Flutter and Dart. The site, where you pair the phone and read about the one-time Pro unlock, is React and Vite.</p>
           <ul class="facts">
             <li>Flutter</li><li>Dart</li><li>Riverpod</li><li>go_router</li><li>dartssh2</li><li>xterm</li><li>React</li><li>Vite</li>
           </ul>
@@ -198,9 +201,10 @@
         </div>
         <div class="copy">
           <h1>Lelo</h1>
-          <p>An online store. It has a catalog with filters, category pages, a product page, bundles, a cart, and a language switcher. The storefront is React on JSON:API and GraphQL, with a Drupal theme in Twig and SCSS.</p>
+          <p>A multi-language, multi-currency shop for LELO, the Swedish sexual-wellness brand. The store has sold 32 million products, and online revenue is about $60 million a year. Shoppers get a catalog with filters, categories for women, men, and couples, product pages, bundles, and a short quiz that recommends something. The cart applies discounts and shipping, and language and currency change from the header. Shipping is discreet, with a 60-day satisfaction guarantee.</p>
+          <p>The storefront is React. Catalog, prices, and orders come from Drupal and Symfony over JSON:API and GraphQL, and orders are processed by background workers. Yearly online growth moved from about 10% to about 50%.</p>
           <ul class="facts">
-            <li>PHP</li><li>Drupal</li><li>Symfony</li><li>React</li><li>Twig</li><li>SCSS</li><li>JSON:API</li><li>GraphQL</li>
+            <li>PHP</li><li>Drupal</li><li>Symfony</li><li>React</li><li>JavaScript</li><li>JSON:API</li><li>GraphQL</li>
           </ul>
           <p class="links">
             <a href="https://www.lelo.com/">lelo.com</a>
@@ -231,7 +235,8 @@
         </div>
         <div class="copy">
           <h1>Foreo</h1>
-          <p>An online store for devices and skincare, in more than one language and currency. It has a catalog, product options, oral care, skincare, and a cart. Payments include PayPal, Stripe, Alipay, iDEAL, Sofort, and Sezzle.</p>
+          <p>A multi-language, multi-currency shop for FOREO’s devices and skincare: facial cleansing, microcurrent, LED masks, and oral care, sold to shoppers in many countries. Online revenue is about $100 million a year, and yearly growth ran from about 50% to about 150%. A product page shows the variant, the local price, the ship-to country, and the delivery date. The cart adds shipping options, a warranty, and checkout.</p>
+          <p>The storefront is a Drupal theme in HTML, CSS, SCSS, and JavaScript, on PHP and Symfony. Language and currency live in that theme. Checkout takes PayPal, Stripe, Alipay, iDEAL, Sofort, and Sezzle.</p>
           <ul class="facts">
             <li>PHP</li><li>Drupal</li><li>Symfony</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SCSS</li>
           </ul>
@@ -262,7 +267,8 @@
         </div>
         <div class="copy">
           <h1>King Trivia</h1>
-          <p>A live trivia product. It has pub quiz, Survey Slam, and music bingo, a player app you join with a code, private events, and pages for venues and quizmasters. Drupal, with a theme in SCSS and HTML, and payments.</p>
+          <p>Weekly trivia for bars and restaurants: pub quiz, music bingo, and Survey Slam. A venue books the night, players join the live game with a code, and the site also takes private events and quizmaster applications. More than 70,000 events since 2004.</p>
+          <p>It is a Drupal product. The theme is SCSS and HTML, the games and bookings are custom modules, and payments are part of the app, with MySQL underneath.</p>
           <ul class="facts">
             <li>Drupal</li><li>PHP</li><li>SCSS</li><li>HTML</li><li>MySQL</li>
           </ul>
